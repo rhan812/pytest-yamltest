@@ -1,0 +1,19 @@
+# APP, APP_H5, WEB
+
+runtype: app
+devices:
+    device: []
+    apkname: com.nl.android.ecgviewer
+
+
+# 日志目录
+log: "C:/log/"
+# 错误截图
+imgpath: "C:/IMAGE/"
+
+email_info:
+    smtp_server: smtp.163.com
+    from_mail: 809273520@qq.com
+    mail_pass: xxxxxx
+    to_mail: ["809273520@qq.com"]
+    port: 25

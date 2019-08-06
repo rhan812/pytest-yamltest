@@ -1,0 +1,51 @@
+切换到云病例:
+    - "观察 | 取消 | 观察是否有取消有点击"
+#    - "键入 | //android.widget.EditText[@text='请输入密码'] @@ 123456 | 设置激活码"
+    - "单击 | com.nl.android.ecgviewer:id/rb_cloud_case_list | 切换至云病例"
+云病例查询:
+    - "键入 | com.nl.android.ecgviewer:id/cloud_search_editText @@ $idcard | 输入身份证号 "
+    - "单击 | 获 取 | 点击获取"
+#    - "断言存在 | $except | 验证结果"
+    - "断言Toast | $excepts | 验证弹框"
+#    - "单击 | com.nl.android.ecgviewer:id/rb_not_collect_list | 返回待检查选项"
+
+
+#取消激活码弹框:
+#    - "单击 | //android.widget.Button[@text='取消'] | 跳过激活码"
+#    - "单击 | com.nl.android.ecgviewer:id/iv_setting | 点击一级设置按扭"
+#    - "单击 | com.nl.android.ecgviewer:id/imbsettings | 点击二级设置按扭"
+##    - "断言存在 | $except | 验证结果"
+
+设置工程师密钥:
+    - "单击 | com.nl.android.ecgviewer:id/rb_not_collect_list | 返回待检查选项"
+    - "单击 | com.nl.android.ecgviewer:id/iv_setting | 点击一级设置按扭"
+    - "单击 | com.nl.android.ecgviewer:id/imbsettings | 点击二级设置按扭"
+    - "单击 | //android.widget.TextView[@text='工程师维护'] | 点击工程师维护"
+    - "键入 | //android.widget.EditText[@text='请输入密码'] @@ $etpwd | 输入工程师密钥"
+    - "单击 | //android.widget.Button[@text='确定'] | 点击确定"
+#    - "断言存在 | $except | 验证结果"
+    - "单击 | //android.widget.TextView[@text='运行环境'] | 点击运行环境"
+    - "单击 | //android.widget.TextView[@text='配置中心地址及端口'] | 点击设置配置中心地址及端口"
+    - "键入 | http://api.cloud.aecg.com.cn @@ http://47.99.57.116:60002 | 清除地址及输入地址及端口"
+    - "单击 | //android.widget.Button[@text='确定'] | 点击确定"
+    - "键入 | //android.widget.EditText[@text='请输入密码'] @@ $etqpwd | 输入工程师密钥"
+    - "单击 | //android.widget.Button[@text='提交'] | 点击提交"
+    - "断言Toast | $excepts | 验证弹框"
+
+创建预约者信息:
+    - "单击 | com.nl.android.ecgviewer:id/rb_not_collect_list | 返回待检查选项"
+    #- "单击 | //android.widget.ImageButton | 点击返回按扭"
+    - "单击 | com.nl.android.ecgviewer:id/createNew | 点击创建"
+    - "键入 | com.nl.android.ecgviewer:id/et_patient_source_no @@ $etsourceno | 输入门诊号"
+    - "键入 | com.nl.android.ecgviewer:id/etPatName @@ $etpatname | 输入姓名"
+    - "键入 | com.nl.android.ecgviewer:id/et_national @@ $etnation | 输入名族"
+    - "键入 | com.nl.android.ecgviewer:id/etIdCardNum @@ $etcardnum | 输入身份证号码"
+    - "键入 | com.nl.android.ecgviewer:id/etCardNo @@ $etcardno | 输入社保卡号"
+    - "键入 | com.nl.android.ecgviewer:id/etTelNumber @@ $etphone | 输入手机号码"
+    - "键入 | com.nl.android.ecgviewer:id/etCheckProject @@ $etcheckpro | 输入检查项目"
+    - "单击 | com.nl.android.ecgviewer:id/rb_hypertension | 点击高血压"
+    - "单击 | com.nl.android.ecgviewer:id/rb_diabetes | 点击糖尿病"
+    - "单击 | com.nl.android.ecgviewer:id/rb_other_his | 点击其它"
+    - "键入 | com.nl.android.ecgviewer:id/et_other_medical_history @@ $etmdical | 输入其它病情备注内容"
+    - "键入 | com.nl.android.ecgviewer:id/et_chief_complaint @@ $etchief | 输入简要主诉内容"
+    - "键入 | com.nl.android.ecgviewer:id/et_clinical_diagnosis @@ $etclinical | 输入临床诊断内容"
